@@ -16,7 +16,7 @@ void draw(){
   
   epilepsyTest();
   
-  badSizeIdea();
+//  badSizeIdea();
 
   dependentFrameRate();
 
@@ -33,7 +33,7 @@ void epilepsyTest(){
 }
 
 void badSizeIdea(){
-  size(int(random(600)) - 1, int(random(600)) -1);
+  size(random(600), random(600));
 }
 
 void dependentFrameRate(){
