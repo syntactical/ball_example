@@ -14,36 +14,10 @@ void draw(){
   background(0);
   size(600,600);
   
-  epilepsyTest();
-  
-//  badSizeIdea();
-
-  dependentFrameRate();
-
-//  size(600, mouseY + 10 + int(random(50)));
   for(int x = 0; x < circles.length; x++){
     circles[x].update();
     circles[x].render();
   }
-}
-
-void epilepsyTest(){
-  background(random(255), 255, 255);
-  fill(random(255), 255, 255);
-}
-
-void badSizeIdea(){
-  size(random(600), random(600));
-}
-
-void dependentFrameRate(){
-  float positional = mouseX;
-  
-  if(random(1) > .5){
-    positional = mouseY;
-  }
-  
-  frameRate(max(4,int(positional + 1) / 20 + 1));
 }
 
 class Circle{
@@ -69,6 +43,14 @@ class Circle{
     followMouse();
     
 //    followMouseMirrored();
+
+//    epilepsyTest();
+
+//    badSizeIdea();
+
+//    anotherBadSizeIdea();
+
+    mouseDependentFrameRate();
     
     sizeDependsOnMouse();
     
@@ -100,6 +82,29 @@ class Circle{
   void sizeDependsOnMouseMirrored(){
     w = mouseY;
     h = mouseX;
+  }
+    
+  void badSizeIdea(){
+    size(int(random(600)), int(random(600)));
+  }
+  
+  void anotherBadSizeIdea(){
+    size(600, mouseY + 10 + int(random(50)));
+  }
+  
+  void mouseDependentFrameRate(){
+    float positional = mouseX;
+  
+    if(random(1) > .5){
+      positional = mouseY;
+    }
+  
+    frameRate(max(4,int(positional + 1) / 20 + 1));
+  }
+  
+  void epilepsyTest(){
+    background(random(255), 255, 255);
+    fill(random(255), 255, 255);
   }
   
   void wobble(){
