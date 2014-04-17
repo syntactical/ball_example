@@ -1,4 +1,4 @@
-lass Circle{
+class Circle{
   float x, y, w, h;
   
   float oscillation1, oscillation2;

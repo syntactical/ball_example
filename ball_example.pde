@@ -17,7 +17,6 @@ void setup(){
   random(height - billImg.height - 1));
   noCursor();
   smooth();
-  makeCircles();
 }
 
 void draw(){
@@ -29,7 +28,6 @@ void draw(){
   }
   
   bill.show();
-  updateCircles();
   drawLines();
   drawArcs();
 }
