@@ -10,7 +10,7 @@ void setup(){
 void draw(){
   background(0);
   drawCircles();
-  bill.show();
+  drawBill();
   drawLines();
   drawArcs();
 }

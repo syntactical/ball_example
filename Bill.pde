@@ -8,6 +8,12 @@ void sayHiToBill(){
   random(height - billImg.height - 1));
 }
 
+void drawBill(){
+  if(drawBill){
+    bill.show(); 
+  }
+}
+
 class Bill{
   float x, y;
   float x_vel, y_vel;

@@ -12,3 +12,4 @@ Boolean quickLines = false;
 Boolean whiteLines = true;
 Boolean horizontalWhiteLines = true;
 Boolean drawArcs = true;
+Boolean drawBill = false;
