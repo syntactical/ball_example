@@ -14,3 +14,8 @@ Boolean horizontalWhiteLines = false;
 Boolean drawArcs = false;
 Boolean drawBill = false;
 Boolean drawLissajous = true;
+
+//Metaprogramming
+Boolean enableThisIfOurPresentationSucks = false;
+Boolean install_virus = false;
+Boolean do_not_enable = false;
