@@ -1,8 +1,33 @@
 Circle[] circles;
 Circle circle1;
-//Circle circle2;
 
+PImage billImg;
+Bill bill;
+
+void setup(){
+  size(600,600);
+  colorMode(HSB);
+  circle1 = new Circle(width/2, height/2, 50, 50);
+  circles = new Circle[1];
+  circles[0] = circle1;
   
+  billImg = loadImage("bill.jpg");
+  bill = new Bill(billImg, 
+    random(width - billImg.width - 1), 
+    random(height - billImg.height - 1));
+}
+
+void draw(){
+  background(0);
+  size(600,600);
+  
+  for(int x = 0; x < circles.length; x++){
+    circles[x].update();
+    circles[x].render();
+  }
+  
+  bill.show();
+}
 
 class Circle{
   float x, y, w, h;
@@ -20,9 +45,9 @@ class Circle{
   }
   
   void update(){
-    
     oscillation1 += PI/50;
     oscillation2 += PI/100;
+
     if (followMouse) {
       followMouse();
     }
@@ -53,8 +78,8 @@ class Circle{
   }
   
   void distend(){
-    h += 100 * sin(oscillation1);
-    w += 100 * cos(oscillation2);
+    h += 10 * sin(oscillation1);
+    w += 10 * cos(oscillation2);
   }
   
   void followMouse(){
@@ -101,7 +126,7 @@ class Circle{
   }
   
   void wobble(){
-    y += 200 * sin(oscillation1);
+    y += 20 * sin(oscillation1);
     x += 50 * cos(oscillation2);
   }
   
