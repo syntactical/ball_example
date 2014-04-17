@@ -1,3 +1,12 @@
+PImage billImg;
+Bill bill;
+
+void sayHiToBill(){
+  billImg = loadImage("bill.jpg");
+  bill = new Bill(billImg, 
+  random(width - billImg.width - 1), 
+  random(height - billImg.height - 1));
+}
 
 class Bill{
   float x, y;
