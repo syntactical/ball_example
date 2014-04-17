@@ -5,7 +5,7 @@ PImage billImg;
 Bill bill;
 
 void setup(){
-  size(600,600);
+  size(displayWidth,displayHeight);
   colorMode(HSB);
   circle1 = new Circle(width/2, height/2, 50, 50);
   circles = new Circle[1];
@@ -15,6 +15,9 @@ void setup(){
   bill = new Bill(billImg, 
   random(width - billImg.width - 1), 
   random(height - billImg.height - 1));
+  noCursor();
+  smooth();
+  makeCircles();
 }
 
 void draw(){
@@ -26,5 +29,11 @@ void draw(){
   }
   
   bill.show();
+  updateCircles();
+  drawLines();
+  drawArcs();
 }
 
+boolean sketchFullScreen() {
+  return true;
+}
