@@ -13,6 +13,7 @@ void draw(){
   drawBill();
   drawLines();
   drawArcs();
+  drawLissajous();
 }
 
 boolean sketchFullScreen() {
