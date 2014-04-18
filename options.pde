@@ -10,12 +10,12 @@ Boolean sizeDependsOnMouse = false;
 Boolean wobble = false;
 Boolean distend = false;
 
-Boolean lines = true;
+Boolean lines = false;
 Boolean arcs = false;
 Boolean drawBill = true;
-Boolean lissajous = false;
+Boolean lissajous = true;
 Boolean fallingStars = true;
-Boolean automata = true;
+Boolean automata = false;
 
 //Metaprogramming
 Boolean enableThisIfOurPresentationSucks = false;
