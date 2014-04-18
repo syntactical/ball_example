@@ -39,9 +39,7 @@ class Circle{
     if (followMouseMirrored) {
       followMouseMirrored();
     }
-    if (epilepsyTest) {
-      epilepsyTest();
-    }
+   
     if (badSizeIdea) {
       badSizeIdea();
     }
@@ -105,10 +103,7 @@ class Circle{
     frameRate(max(4,int(positional + 1) / 20 + 1));
   }
   
-  void epilepsyTest(){
-    background(random(255), 255, 255);
-    fill(random(255), 255, 255);
-  }
+ 
   
   void wobble(){
     y += 20 * sin(oscillation1);
