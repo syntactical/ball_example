@@ -6,6 +6,7 @@ void setup(){
   noCursor();
   smooth();
   makeStars();
+  makeAutomata();
 }
 
 void draw(){
@@ -16,6 +17,7 @@ void draw(){
   drawArcs();
   drawLissajous();
   fallingStars();
+  crystallize();
 }
 
 boolean sketchFullScreen() {

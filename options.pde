@@ -11,12 +11,13 @@ Boolean wobble = false;
 Boolean distend = false;
 Boolean drawLines = false;
 Boolean quickLines = false;
-Boolean whiteLines = true;
-Boolean horizontalWhiteLines = true;
+Boolean whiteLines = false;
+Boolean horizontalWhiteLines = false;
 Boolean drawArcs = false;
 Boolean drawBill = false;
-Boolean drawLissajous = true;
+Boolean drawLissajous = false;
 Boolean fallingStars = true;
+Boolean automata = true;
 
 //Metaprogramming
 Boolean enableThisIfOurPresentationSucks = false;
