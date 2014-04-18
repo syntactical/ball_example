@@ -23,6 +23,7 @@ class Bill{
     x = _x;
     y = _y;
     img = _img;
+    img.resize(img.width * 4, img.height*4);
     x_vel = 5.4;
     y_vel = 5;
   }

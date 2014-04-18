@@ -1,5 +1,6 @@
 void drawArcs(){
-  if (drawArcs){
+  if (arcs){
+    pushMatrix();
     colorMode(HSB);
     strokeWeight(20);
     noFill();
@@ -17,5 +18,6 @@ void drawArcs(){
         arc(0, 0, 100*(k+.5)+100, 200*(k+.5)+200, radians(-frameCount + 180), radians(-frameCount + 45 + 180));
       }
     }
+    popMatrix();
   }
 }

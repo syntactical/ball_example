@@ -9,13 +9,11 @@ Boolean mouseDependentFrameRate = false;
 Boolean sizeDependsOnMouse = false;
 Boolean wobble = false;
 Boolean distend = false;
-Boolean drawLines = false;
-Boolean quickLines = false;
-Boolean whiteLines = false;
-Boolean horizontalWhiteLines = false;
-Boolean drawArcs = false;
-Boolean drawBill = false;
-Boolean drawLissajous = false;
+
+Boolean lines = true;
+Boolean arcs = false;
+Boolean drawBill = true;
+Boolean lissajous = false;
 Boolean fallingStars = true;
 Boolean automata = true;
 

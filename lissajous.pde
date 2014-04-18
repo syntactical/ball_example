@@ -1,5 +1,5 @@
 void drawLissajous(){
-  if(drawLissajous){
+  if(lissajous){
     pushMatrix();
     translate(width/4, height/4);
     
