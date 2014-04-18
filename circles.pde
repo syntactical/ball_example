@@ -1,18 +1,18 @@
-Circle[] circles;
-Circle circle1;
+Circle circle;
+
+
+void setUpCircles(){
+  circle = new Circle(width/2, height/2, 50, 50);
+}
 
 void drawCircles(){
-  for(int x = 0; x < circles.length; x++){
-    circles[x].update();
-    circles[x].render();
+  if (drawCircles){
+    circle.update();
+    circle.render();
   }
 }
 
-void setUpCircles(){
-  circle1 = new Circle(width/2, height/2, 50, 50);
-  circles = new Circle[1];
-  circles[0] = circle1;
-}
+
 
 class Circle{
   float x, y, w, h;

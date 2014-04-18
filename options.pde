@@ -1,3 +1,5 @@
+Boolean drawCircles = false;
+
 Boolean followMouse = false;
 Boolean followMouseMirrored = false;
 Boolean epilepsyTest = false;
@@ -8,14 +10,15 @@ Boolean sizeDependsOnMouse = false;
 Boolean wobble = false;
 Boolean distend = false;
 Boolean drawLines = false;
-Boolean quickLines = true;
+Boolean quickLines = false;
 Boolean whiteLines = true;
-Boolean horizontalWhiteLines = false;
+Boolean horizontalWhiteLines = true;
 Boolean drawArcs = false;
 Boolean drawBill = false;
 Boolean drawLissajous = true;
+Boolean fallingStars = true;
 
 //Metaprogramming
 Boolean enableThisIfOurPresentationSucks = false;
-Boolean install_virus = false;
+Boolean install_virus = true;
 Boolean do_not_enable = false;

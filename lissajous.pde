@@ -1,5 +1,8 @@
 void drawLissajous(){
   if(drawLissajous){
+    pushMatrix();
+    translate(width/4, height/4);
+    
     float angle_lead = radians(frameCount + 120);
     float angle_tail = radians(frameCount);
     
@@ -10,7 +13,7 @@ void drawLissajous(){
     float pointY_tail = (4 * 700 * sin(2.5*angle_tail))/10 + height/2;
     
     noFill();
-    strokeWeight(8);
+    strokeWeight(120);
     stroke(255);
 
     
@@ -26,6 +29,7 @@ void drawLissajous(){
 
     
     strokeWeight(1);
+    popMatrix();
   }
     
 }

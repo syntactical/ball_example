@@ -5,6 +5,7 @@ void setup(){
   sayHiToBill();
   noCursor();
   smooth();
+  makeStars();
 }
 
 void draw(){
@@ -14,6 +15,7 @@ void draw(){
   drawLines();
   drawArcs();
   drawLissajous();
+  fallingStars();
 }
 
 boolean sketchFullScreen() {
