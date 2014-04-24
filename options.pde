@@ -1,6 +1,6 @@
-Boolean drawCircles = false;
+Boolean drawCircles = true;
 
-Boolean followMouse = false;
+Boolean followMouse = true;
 Boolean followMouseMirrored = false;
 Boolean badSizeIdea = false;
 Boolean anotherBadSizeIdea = false;
@@ -9,10 +9,10 @@ Boolean sizeDependsOnMouse = false;
 Boolean wobble = false;
 Boolean distend = false;
 
-Boolean interdimensional = true;
+Boolean interdimensional = false;
 Boolean popMusic = false;
 Boolean lines = false;
-Boolean arcs = true;
+Boolean arcs = false;
 Boolean drawBill = false;
 Boolean lissajous = false;
 Boolean fallingStars = true;
